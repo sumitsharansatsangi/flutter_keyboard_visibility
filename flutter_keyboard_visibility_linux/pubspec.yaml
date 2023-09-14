@@ -1,12 +1,13 @@
 name: flutter_keyboard_visibility_linux
+publish_to: none
 description: An implementation for the linux platform of `flutter_keyboard_visibility'
 version: 1.0.0
 homepage: https://github.com/MisterJimson/flutter_keyboard_visibility
 repository: https://github.com/MisterJimson/flutter_keyboard_visibility
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
-  flutter: '>=1.20.0'
+  sdk: '>=3.1.0 <4.0.0'
+  flutter: '>=3.13.0'
 
 flutter:
   plugin:
@@ -16,11 +17,13 @@ flutter:
         dartPluginClass: FlutterKeyboardVisibilityPluginLinux
 
 dependencies:
-  flutter_keyboard_visibility_platform_interface: ^2.0.0
+  flutter_keyboard_visibility_platform_interface:
+    git: https://github.com/kumsumit/flutter_keyboard_visibility_platform_interface.git
   flutter:
     sdk: flutter
 
 dev_dependencies:
-  pedantic: ^1.11.0
+  flutter_lints: 
+    git: https://github.com/kumsumit/flutter_lints.git
   flutter_test:
     sdk: flutter
